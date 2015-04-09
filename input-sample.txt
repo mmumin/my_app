@@ -1,0 +1,31 @@
+burger tofu_log chef_salad steak_salad_sandwich wine_spritzer extreme_fajita fancy_european_water extreme_fajita jalapeno_poppers extra_salsa 
+
+INPUT:
+-------
+data = """1, 4.00, burger
+1, 8.00, tofu_log
+2, 5.00, burger
+2, 6.50, tofu_log
+3, 4.00, chef_salad
+3, 8.00, steak_salad_sandwich
+4, 5.00, steak_salad_sandwich
+4, 2.50, wine_spritzer
+5, 4.00, extreme_fajita
+5, 8.00, fancy_european_water
+6, 5.00, fancy_european_water
+6, 6.00, extreme_fajita, jalapeno_poppers, extra_salsa
+
+
+OUTPUT:
+------
+burger 	:	('1', '4.00')
+tofu_log 	:	('1', '8.00')
+chef_salad 	:	('3', '4.00')
+steak_salad_sandwich 	:	('3', '8.00')
+wine_spritzer 	:	('4', '2.50')
+extreme_fajita 	:	('5', '4.00')
+fancy_european_water 	:	('5', '8.00')
+extreme_fajita 	:	('5', '4.00')
+jalapeno_poppers 	:	('6', '6.00')
+extra_salsa 	:	('6', '6.00')
+
