@@ -35,17 +35,18 @@ class my_app(object):
                 total_data[res_id] = [(item[1], labels)]
 
     def prices_n_rest(self, label):
+        lst_of_metadata = []
         for key in total_data.keys():
-            #import pdb;pdb.set_trace()
             for item in total_data[key]:
                 if label in item[1]:
-                    return key, item[0]
-        return None, None
+                    rest_id, price = key, item[0]
+                    lst_of_metadata.append((rest_id, price))
+        return lst_of_metadata
 
     def min_of(self, lst):
         for label in lst:
             meta_data = self.prices_n_rest(label)
-            print label, '\t:\t', meta_data
+            print label, '\t:\t', len(meta_data)
 
 if __name__ == '__main__':
     app_obj = my_app()
