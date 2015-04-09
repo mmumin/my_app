@@ -23,6 +23,8 @@ class my_app(object):
 
     def get_data(self):
         for item in self.lines:
+            if len(item) < 3:
+                continue
             labels = [item[i] for i in range(2, len(item))]
             res_id = item[0]
             if res_id in total_data.keys():
@@ -31,7 +33,6 @@ class my_app(object):
                 total_data[res_id] = lst_of_tup_of_prices
             else:
                 total_data[res_id] = [(item[1], labels)]
-        #print total_data
 
     def prices_n_rest(self, label):
         for key in total_data.keys():
