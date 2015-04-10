@@ -49,9 +49,49 @@ class my_app(object):
 	return lst_of_metadata
 
     def get_mult_comb(self, item_labels):
+        import pdb;pdb.set_trace()
+        self.label_wise_data = {}
 	for label in item_labels:
 	    meta_data = self.prices_n_rest(label)
 	    print label, '\t:\t', meta_data
+            self.label_wise_data[label] = meta_data
+
+
+
+    def get_minimum_multiple_comb(self, item_labels):
+        last = item_labels.pop()
+        remaining = item_labels
+        label_wise_min = {}
+        first_ele = item_labels[0]
+        condition = True
+        sub_condition = True
+        while True:
+            if not sub_condition:
+                break
+            for key, key_data in total_data.iteritems():
+                key_data1 = key_data
+                for index, item in enumerate(key_data):
+                    list_of_remaining = []
+                    list_of_last = []
+                    if set(remaining).issubset(item[1]):
+                        list_of_remaining.append((item[0], index))
+                    if set(last).issubset(item[1]):
+                        list_of_last.append((item[0], index))
+                label_wise_min[key] = (list_of_remaining, list_of_last)
+            import pdb;pdb.set_trace()
+            temp = last
+            last = item_labels.pop()
+            item_labels.append(temp)     
+            remaining = item_labels
+            if first_ele == last:
+                sub_condition = False
+        return label_wise_min
+ 
+
+    def compare_multiple_menus(self):
+        import pdb;pdb.set_trace()
+        print self.label_wise_data
+
 
 if __name__ == '__main__':
 	total_data = {}
@@ -63,11 +103,14 @@ if __name__ == '__main__':
         list_of_restaurants = []
 	if restaurant and prices:
             list_of_restaurants.append((restaurant, prices))
-	app_obj.get_mult_comb(label_lst)
+        label_wise_min = app_obj.get_minimum_multiple_comb(label_lst)
+        import pdb;pdb.set_trace()
+	#app_obj.get_mult_comb(label_lst)
+        #app_obj.compare_multiple_menus()
         if not list_of_restaurants:
             print "Nil"
         else:
             print list_of_restaurants[0][0], list_of_restaurants[0][1],'\n\n'
-            print list_of_restaurants
+            #print list_of_restaurants
         #print total_data
 	#print app_obj.lines
