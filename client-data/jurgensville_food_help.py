@@ -116,6 +116,26 @@ class my_app(object):
 			label_list.append(item)
 	self.data_dict = self.remove_identical(self.data_dict)
 	self.check_minimum(items_label)
+	self.check_lowest_of_all_labels(items_label)
+
+    def check_lowest_of_all_labels(self, lables):
+	data = self.data_dict#{'1': [('2.00', ['A']), ('1.25', ['B']), ('2.00', ['C']), ('1.00', ['D']), ('1.00', ['A', 'B']), ('1.50', ['A', 'C']), ('2.50', ['A', 'D'])]}
+	#lables = ['B', 'C', 'A', 'D']
+	prices = {}
+	def min_of_label(label, data, prices):
+	    for item in data:
+	        if set(label).issubset(item[1]):
+	            if label in prices.keys():
+			if float(prices[label]) > float(item[0]):
+		            prices[label] = item[0]
+		    else:
+			prices[label] = item[0]
+	for rest_id in data.keys():
+	    for label in lables:
+		min_of_label(label, data[rest_id], prices)
+	    import pdb;pdb.set_trace()
+	    print prices
+
 
 if __name__ == '__main__':
 	total_data = {}
@@ -125,7 +145,9 @@ if __name__ == '__main__':
 	app_obj.get_data()
 	label_lst = [i for i in sys.argv[2:][0:]]
 	restaurant, prices = app_obj.check_single_rest(label_lst)
+	import pdb;pdb.set_trace()
 	app_obj.check_multiple_rest(label_lst)
+	import pdb;pdb.set_trace()
 	multi_rest, mult_price = None, None
 	flag = False
 	if multiple_list:
@@ -143,4 +165,29 @@ if __name__ == '__main__':
             print int(list_of_restaurants[0][0]), float(list_of_restaurants[0][1])
 	else:
             print "Nil"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
