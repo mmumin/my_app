@@ -21,7 +21,6 @@ class my_app(object):
 	        total_data[res_id] = [(item[1], labels)]
 
     def minimun(self, lst):
-	import pdb;pdb.set_trace()
 	mini_price = lst[0][1]
 	rest_id = lst[0][0]
 	for i in lst:
@@ -59,67 +58,85 @@ class my_app(object):
 	    new_dict[key] = new_data
 	return new_dict
 
+    def get_permutations(self, label_items):
+	import itertools
+	permutats = list(itertools.permutations(label_items, len(label_items)))
+	permutats = [list(i) for i in permutats]
+	identical = []
+	for item in permutats:
+	    if not set(item) in [set(j) for j in identical]:
+		identical.append(item)
+	return identical
 
-    def check_this(self, key, label_found, price, label_items, value):
-        total_price = price
-        final_list = []
-        for item in value:
-	    if set(item[1]).issubset(label_items) and len(item[1]) == len(label_items):
-	        total_price = float(price) + float(item[0])
-                #print "Total price incurred ", total_price, ' for combo ', item[1], ' and ', label_found
-	        self.final_list.append([key, total_price])
+    def check_permut_price_if_any(self, permut, total_ramaining_rest_data):
+	lst_of_prices = []
+	for item in total_ramaining_rest_data:
+	    if set(permut).issubset(item[1]) and len(permut) <= len(item[1]):
+		lst_of_prices.append(item[0])
+	try:
+	    return min([float(i) for i in lst_of_prices])
+	except:
+	    return None
 
-    def check_minimum(self, label_items, data_dict):
-        #label_items = ['C', 'B', 'A', 'D']
-        for key, value in data_dict.iteritems():
-            for index, item in enumerate(value):
+    def check_this(self, rest_id, label_found, label_found_price, remaining_label_items, total_ramaining_rest_data):
+        total_price = float(label_found_price)
+	permutats = self.get_permutations(remaining_label_items)
+	for permut in permutats:
+	    remaining_price = self.check_permut_price_if_any(permut, total_ramaining_rest_data)
+	    if remaining_price:
+		total_price = total_price + float(remaining_price)
+	        if not [rest_id, total_price] in multiple_list:
+	            multiple_list.append([rest_id, total_price])
+	#print rest_id, multiple_list
+
+    def check_minimum(self, label_items):
+        for rest_id, rest_data in self.data_dict.iteritems():
+            for index, item in enumerate(rest_data):
 	        if set(item[1]).issubset(label_items):
                     for i in item[1]:
                         label_items.remove(i)
-                        self.check_this(key, item[1], item[0], label_items, value)
+                        self.check_this(rest_id, item[1], item[0], label_items, rest_data)
                     for i in item[1]:
                         label_items.append(i)
 
 
     def check_multiple_rest(self, items_label):
 	label_list = [i for i in items_label]
-	data_dict = {}
+	self.data_dict = {}
 	for key, value in total_data.iteritems():
 	    for each in value:
 		for item in items_label:
 	            if set([item]).issubset(each[1]):
 		        label_list.remove(item)
-		        if not key in data_dict.keys():
-			    data_dict[key] = [each]
+		        if not key in self.data_dict.keys():
+			    self.data_dict[key] = [each]
         		else:
-			    old_data = data_dict[key]
+			    old_data = self.data_dict[key]
 			    old_data.append(each)
 			label_list.append(item)
-	data_dict = self.remove_identical(data_dict)
-	#print data_dict
-	self.final_list = []
-	self.check_minimum(items_label, data_dict)
-	import pdb;pdb.set_trace()
-	print self.final_list
-
+	self.data_dict = self.remove_identical(self.data_dict)
+	self.check_minimum(items_label)
 
 if __name__ == '__main__':
 	total_data = {}
+	multiple_list = []
 	import sys
 	app_obj = my_app(sys.argv[1])
 	app_obj.get_data()
 	label_lst = [i for i in sys.argv[2:][0:]]
 	restaurant, prices = app_obj.check_single_rest(label_lst)
 	app_obj.check_multiple_rest(label_lst)
-	import pdb;pdb.set_trace()
-	multi_rest, mult_price = app_obj.minimun(app_obj.final_list)
+	multi_rest, mult_price = None, None
+	flag = False
+	if multiple_list:
+	    multi_rest, mult_price = app_obj.minimun(multiple_list)
+	    flag = True
         list_of_restaurants = []
 	if restaurant and prices:
             list_of_restaurants.append((restaurant, prices))
-	flag = False
 	if multi_rest and mult_price and list_of_restaurants:
-	    if float(mult_price) < float(list_of_restaurants[0][1]):
-		flag = True
+	    if float(mult_price) > float(list_of_restaurants[0][1]):
+		flag = False
 	if flag:
 	    print int(multi_rest), float(mult_price)
         elif list_of_restaurants and not flag:
