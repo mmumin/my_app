@@ -146,10 +146,12 @@ class my_app(object):
 		    data_list.append(float(tup[1]))
 		    index_list.append(float(tup[0]))
 	    leng = 0.0
-	    for i in data_list:
-		leng = leng + i
-	    lowest_comb_in_rest[rest_id] = leng
+	    if data_list:
+	        for i in data_list:
+		    leng = leng + i
+	        lowest_comb_in_rest[rest_id] = leng
 	#print lowest_comb_in_rest, lables
+	#import pdb;pdb.set_trace()
 	if lowest_comb_in_rest:
 	    return min(lowest_comb_in_rest, key=lowest_comb_in_rest.get),  min(lowest_comb_in_rest.values())
 	return None, None
@@ -182,6 +184,9 @@ if __name__ == '__main__':
 	restaurant, prices = app_obj.check_single_rest(label_lst)
 	#import pdb;pdb.set_trace()
 	multuple_menu_cost = app_obj.check_multiple_rest(label_lst)
+	mult_flag = False
+	if multuple_menu_cost[0] and multuple_menu_cost[1]:
+	    mult_flag = True
 	#import pdb;pdb.set_trace()
 	multi_rest, mult_price = None, None
 	flag = False
@@ -189,10 +194,10 @@ if __name__ == '__main__':
 	if multiple_list:
 	    multi_rest, mult_price = app_obj.minimun(multiple_list)
 	    flag = True
-	    if multuple_menu_cost:
+	    if mult_flag:
 		if multuple_menu_cost[1] < mult_price:
 		    multi_rest, mult_price = multuple_menu_cost[0], multuple_menu_cost[1]
-	elif multuple_menu_cost:
+	elif mult_flag:
 	    multi_rest, mult_price = multuple_menu_cost[0], multuple_menu_cost[1]
 	    flag = True
         list_of_restaurants = []
