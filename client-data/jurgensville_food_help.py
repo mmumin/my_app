@@ -99,6 +99,15 @@ class my_app(object):
                     for i in item[1]:
                         label_items.append(i)
 
+    def min_of_label(self, label, data, prices):
+	for index, item in enumerate(data):
+	    if set(label).issubset(item[1]):
+	        if label in prices.keys():
+		    if float(prices[label][1]) > float(item[0]):
+		        prices[label] = (index, item[0])
+		else:
+		    prices[label] = (index, item[0])
+	return prices
 
     def check_multiple_rest(self, items_label):
 	label_list = [i for i in items_label]
@@ -117,18 +126,8 @@ class my_app(object):
 	self.data_dict = self.remove_identical(self.data_dict)
 	self.check_minimum(items_label)
 	multuple_menu_cost = self.check_lowest_of_all_labels(items_label)
+	#import pdb;pdb.set_trace()
 	return multuple_menu_cost
-
-
-    def min_of_label(self, label, data, prices):
-	for index, item in enumerate(data):
-	    if set(label).issubset(item[1]):
-	        if label in prices.keys():
-		    if float(prices[label][1]) > float(item[0]):
-		        prices[label] = (index, item[0])
-		else:
-		    prices[label] = (index, item[0])
-	return prices
 
 
     def check_lowest_of_all_labels(self, lables):
@@ -155,7 +154,19 @@ class my_app(object):
 	    return min(lowest_comb_in_rest, key=lowest_comb_in_rest.get),  min(lowest_comb_in_rest.values())
 	return None, None
 	
+    def check_item(self, item):
+        for tup in self.lines:
+	    lst = tup[2:]
+            if item in lst:
+    	        return True
+        return None
 
+    def check_labels_valid(self, data):
+        for item in data:
+            flag = self.check_item(item)
+            if not flag:
+	        return None
+        return True
 
 if __name__ == '__main__':
 	total_data = {}
@@ -164,6 +175,10 @@ if __name__ == '__main__':
 	app_obj = my_app(sys.argv[1])
 	app_obj.get_data()
 	label_lst = [i for i in sys.argv[2:][0:]]
+        flag = app_obj.check_labels_valid(label_lst)
+	if not flag:
+	    print 'Nil'
+	    sys.exit(1)
 	restaurant, prices = app_obj.check_single_rest(label_lst)
 	#import pdb;pdb.set_trace()
 	multuple_menu_cost = app_obj.check_multiple_rest(label_lst)
@@ -188,9 +203,12 @@ if __name__ == '__main__':
 		flag = False
 	if flag:
 	    print int(multi_rest), float(mult_price)
+	    sys.exit(0)
         elif list_of_restaurants and not flag:
             print int(list_of_restaurants[0][0]), float(list_of_restaurants[0][1])
+	    sys.exit(0)
 	else:
+	    sys.exit(1)
             print "Nil"
 
 
