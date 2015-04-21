@@ -123,10 +123,10 @@ class my_app(object):
 			    old_data = self.data_dict[key]
 			    old_data.append(each)
 			label_list.append(item)
+
 	self.data_dict = self.remove_identical(self.data_dict)
 	self.check_minimum(items_label)
 	multuple_menu_cost = self.check_lowest_of_all_labels(items_label)
-	#import pdb;pdb.set_trace()
 	return multuple_menu_cost
 
 
@@ -151,7 +151,6 @@ class my_app(object):
 		    leng = leng + i
 	        lowest_comb_in_rest[rest_id] = leng
 	#print lowest_comb_in_rest, lables
-	#import pdb;pdb.set_trace()
 	if lowest_comb_in_rest:
 	    return min(lowest_comb_in_rest, key=lowest_comb_in_rest.get),  min(lowest_comb_in_rest.values())
 	return None, None
@@ -182,15 +181,15 @@ if __name__ == '__main__':
 	    print 'Nil'
 	    sys.exit(1)
 	restaurant, prices = app_obj.check_single_rest(label_lst)
-	#import pdb;pdb.set_trace()
 	multuple_menu_cost = app_obj.check_multiple_rest(label_lst)
+	if multuple_menu_cost == None:
+	    print 'Nil'
+	    sys.exit(1)
 	mult_flag = False
 	if multuple_menu_cost[0] and multuple_menu_cost[1]:
 	    mult_flag = True
-	#import pdb;pdb.set_trace()
 	multi_rest, mult_price = None, None
 	flag = False
-	#import pdb;pdb.set_trace()
 	if multiple_list:
 	    multi_rest, mult_price = app_obj.minimun(multiple_list)
 	    flag = True
@@ -213,8 +212,8 @@ if __name__ == '__main__':
             print int(list_of_restaurants[0][0]), float(list_of_restaurants[0][1])
 	    sys.exit(0)
 	else:
-	    sys.exit(1)
             print "Nil"
+	    sys.exit(1)
 
 
 
