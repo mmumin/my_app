@@ -1,13 +1,3 @@
-python app.py sample_data.csv burger pasta omelette
-
-
-burger 	:	('10', '4.0')
-pasta 	:	('10', '4.0')
-omelette 	:	('10', '3.0')
-
-
-
-
 1, 3.0, burger
 1, 4.0, omelette, chicken
 1, 2.0, pasta

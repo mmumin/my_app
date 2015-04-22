@@ -1,0 +1,205 @@
+1, 10.0, rissotto
+1, 6.0, omelette, rissotto, dosa, beer, puri, burger, pasta
+1, 9.0, beer
+1, 8.0, beer, dosa, fish, pizza, burger, rissotto
+1, 4.0, wada
+1, 9.0, beer, burger, puri, dosa, omelette, pizza, wada, pasta, fish
+1, 6.0, fish
+1, 2.0, wada, fish, puri
+1, 3.0, puri
+1, 2.0, puri, dosa, fish, rissotto, pizza, burger, beer, wada, pasta, omelette
+1, 8.0, burger
+1, 2.0, puri, fish, dosa, beer, omelette, rissotto, burger, wada
+1, 10.0, wada, puri, fish, omelette, dosa, burger, pizza
+1, 4.0, beer, dosa
+2, 7.0, puri
+2, 6.0, beer, fish, burger, omelette, pizza
+2, 2.0, fish
+2, 5.0, fish, beer
+2, 8.0, wada
+2, 4.0, burger, pasta, dosa, puri, beer, fish
+2, 10.0, pizza, pasta, omelette
+2, 9.0, pizza
+2, 6.0, pizza, pasta, beer, dosa, omelette
+2, 8.0, pasta
+2, 2.0, puri, pizza, burger, pasta, omelette, wada, beer, rissotto, fish, dosa
+2, 5.0, omelette
+2, 5.0, wada, puri, pasta, beer, burger, pizza, rissotto, fish
+2, 4.0, pasta, rissotto, dosa
+2, 5.0, burger
+2, 7.0, rissotto, fish, pizza, beer, burger, pasta, wada, omelette
+2, 9.0, beer
+2, 7.0, fish, pizza, omelette, dosa, beer, rissotto, puri
+2, 4.0, dosa, rissotto, wada, burger, pasta
+2, 9.0, puri, pasta, fish, wada
+2, 6.0, omelette, beer, burger, pasta, fish, wada, pizza
+3, 5.0, wada
+3, 2.0, fish, pasta
+3, 4.0, dosa
+3, 6.0, puri, pizza, pasta, wada, omelette, fish
+3, 5.0, pizza
+3, 6.0, dosa, omelette, beer, pizza, pasta, burger, puri
+3, 9.0, rissotto
+3, 5.0, beer, pasta, dosa, fish, wada, burger, pizza, omelette
+3, 9.0, pasta
+3, 9.0, pizza, puri, beer, fish, dosa, wada, omelette
+3, 8.0, omelette
+3, 5.0, pasta, dosa, fish, beer, wada, omelette, puri
+3, 10.0, beer, omelette
+3, 8.0, beer, burger, rissotto
+3, 4.0, pasta, wada, fish, pizza
+3, 6.0, fish
+3, 4.0, omelette, burger, wada, pasta
+3, 6.0, puri, burger, pasta, pizza
+3, 7.0, beer
+3, 9.0, pizza, fish, pasta, beer, rissotto, burger, wada, omelette, puri
+3, 7.0, rissotto, beer, burger, puri, pasta
+3, 6.0, puri
+3, 8.0, fish, puri, pasta, dosa, burger, wada
+3, 7.0, dosa, burger, wada, omelette, beer, pasta, fish, puri, pizza, rissotto
+3, 6.0, fish, dosa, beer, rissotto
+3, 6.0, wada, dosa, beer, pasta
+3, 10.0, pasta, beer, pizza, rissotto, puri, fish, omelette, wada
+3, 3.0, rissotto, burger, pizza
+3, 8.0, fish, puri, pizza, pasta, omelette
+4, 9.0, pizza
+4, 8.0, pizza, omelette, beer, wada, burger, rissotto, puri, pasta
+4, 10.0, puri
+4, 7.0, pasta, puri
+4, 3.0, omelette
+4, 2.0, beer, omelette, pizza, burger
+4, 8.0, burger
+4, 7.0, rissotto, puri, fish, omelette, pasta
+4, 3.0, wada
+4, 4.0, puri, omelette, pasta
+4, 9.0, dosa
+4, 3.0, omelette, burger
+4, 4.0, rissotto
+4, 8.0, burger, rissotto, dosa
+4, 10.0, omelette, pasta
+4, 10.0, dosa, omelette, pizza, puri, wada, burger, fish, pasta, beer, rissotto
+4, 4.0, fish
+4, 6.0, omelette, fish
+4, 3.0, beer
+4, 8.0, fish, pizza, omelette, burger, rissotto, wada, pasta, beer, puri
+4, 10.0, dosa, omelette, fish, wada, puri, burger, pasta, beer
+4, 3.0, pizza, beer, pasta, rissotto, omelette, fish, burger, wada
+4, 2.0, pasta, burger, rissotto
+4, 4.0, dosa, puri, beer, burger, wada, pizza, pasta, omelette, fish
+5, 4.0, pizza
+5, 9.0, beer, omelette, puri, burger, rissotto, fish
+5, 2.0, fish
+5, 4.0, omelette, burger, dosa
+5, 4.0, puri, dosa, rissotto, beer, pasta, burger, fish, wada, omelette
+5, 7.0, burger
+5, 6.0, omelette, fish
+5, 9.0, wada
+5, 9.0, pasta, puri, beer, pizza, wada, omelette, rissotto, burger
+5, 7.0, pasta
+5, 8.0, pizza, puri, rissotto, wada, omelette, burger
+5, 10.0, pizza, beer, dosa, rissotto, puri, burger, pasta, fish, wada
+5, 8.0, dosa
+5, 3.0, rissotto, pasta, fish, pizza, dosa, beer, wada, omelette
+6, 9.0, omelette
+6, 10.0, rissotto, fish, beer, burger, omelette, puri, wada, dosa, pizza
+6, 2.0, burger
+6, 8.0, puri, pizza, rissotto, fish, wada
+6, 9.0, puri
+6, 10.0, dosa, fish, puri, pizza
+6, 7.0, wada
+6, 10.0, puri, dosa, burger, omelette, rissotto
+6, 3.0, beer
+6, 2.0, pasta, omelette, wada, burger, fish
+6, 8.0, pizza
+6, 2.0, pasta, burger, beer, rissotto, puri, dosa, fish, pizza
+6, 7.0, fish, rissotto, pasta, wada, pizza, burger
+6, 6.0, fish, pizza, dosa, burger, rissotto, omelette
+6, 8.0, dosa
+6, 6.0, dosa, rissotto, wada, pizza, puri, beer, pasta, fish, omelette, burger
+6, 6.0, dosa, burger, wada, pizza
+6, 4.0, burger, puri, beer
+6, 9.0, beer, wada
+7, 9.0, pasta
+7, 3.0, omelette, pasta, wada, fish, puri, beer, rissotto, dosa, pizza
+7, 5.0, burger, omelette, rissotto, pasta
+7, 6.0, burger
+7, 6.0, dosa, omelette, fish, beer, rissotto
+7, 9.0, pizza
+7, 6.0, pasta, wada, fish, omelette, dosa, rissotto, pizza
+7, 4.0, puri
+7, 6.0, burger, wada, rissotto, puri
+7, 8.0, fish, pizza, dosa, omelette, puri, wada
+7, 6.0, dosa
+7, 3.0, wada, pizza, fish, pasta, burger, beer, rissotto, dosa, puri
+7, 9.0, burger, wada, omelette
+7, 7.0, fish
+7, 3.0, fish, pasta, pizza, omelette, burger, beer
+7, 9.0, omelette
+7, 5.0, fish, pizza, wada, puri
+7, 10.0, wada
+7, 3.0, omelette, beer, burger, puri, rissotto, fish, pasta, wada, dosa, pizza
+7, 2.0, fish, dosa, wada, omelette, beer
+8, 5.0, fish
+8, 7.0, beer, puri, dosa, burger, rissotto, omelette, wada, pasta, pizza, fish
+8, 3.0, beer
+8, 3.0, dosa, rissotto, burger
+8, 7.0, rissotto
+8, 6.0, rissotto, pizza
+8, 4.0, beer, burger, wada, pizza, rissotto, puri, pasta, dosa
+8, 3.0, pizza
+8, 2.0, dosa, burger, pasta
+8, 2.0, omelette, beer, pizza, dosa, pasta, puri, wada, rissotto, burger
+8, 7.0, wada, burger, fish, pasta, puri, omelette, pizza, rissotto, dosa
+8, 6.0, omelette
+8, 10.0, wada
+8, 2.0, puri, pizza, omelette, dosa, rissotto, fish, wada, pasta
+8, 10.0, pasta
+8, 5.0, pasta, omelette, burger, puri
+8, 8.0, dosa, omelette, beer, burger
+8, 5.0, pasta, rissotto, dosa
+8, 8.0, fish, omelette, pasta, beer, puri, rissotto, burger, pizza
+8, 3.0, dosa, omelette, pizza, beer
+8, 3.0, dosa
+8, 4.0, pasta, burger, puri, beer, omelette
+9, 6.0, wada
+9, 2.0, puri, burger
+9, 8.0, beer
+9, 2.0, fish, omelette, puri, pizza, burger, rissotto
+9, 4.0, pasta
+9, 6.0, puri, rissotto
+9, 10.0, dosa
+9, 5.0, wada, puri, burger, omelette, pizza, pasta, dosa, rissotto, fish, beer
+9, 3.0, puri
+9, 3.0, omelette, burger, puri, wada
+9, 3.0, omelette
+9, 5.0, pizza
+9, 4.0, burger
+9, 9.0, puri, fish, rissotto, wada, dosa, burger
+9, 2.0, fish
+9, 2.0, fish, pizza, puri, wada, dosa, omelette, beer, burger
+9, 4.0, beer, burger, rissotto, pizza, dosa, fish, puri, omelette, pasta
+9, 5.0, dosa, pasta, puri, pizza, rissotto
+9, 8.0, omelette, dosa, pasta, pizza
+9, 4.0, pizza, fish, wada, puri, beer, omelette, dosa
+9, 10.0, pizza, fish, rissotto
+10, 6.0, dosa
+10, 4.0, omelette, pasta, pizza, beer, fish, rissotto
+10, 2.0, fish
+10, 9.0, pizza, rissotto, fish, pasta, omelette
+10, 2.0, omelette
+10, 3.0, puri, burger, wada, pizza, omelette
+10, 3.0, burger
+10, 2.0, puri, fish, pasta, omelette, dosa, wada, pizza, beer, burger, rissotto
+10, 10.0, rissotto
+10, 7.0, wada, puri, rissotto
+10, 6.0, beer
+10, 5.0, puri, rissotto, pasta, pizza, wada
+10, 8.0, puri
+10, 6.0, pasta
+10, 6.0, fish, wada, beer, puri, omelette, rissotto, burger
+10, 5.0, beer, dosa, fish, puri
+10, 5.0, pizza
+10, 8.0, pizza, dosa, puri, beer, wada, fish, rissotto, omelette, pasta
+10, 4.0, burger, rissotto, omelette, wada, pizza
+10, 2.0, puri, pasta
+

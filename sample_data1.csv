@@ -1,0 +1,192 @@
+python app.py sample_data.csv burger pasta omelette
+
+1, 3.0, burger
+1, 4.0, omelette, chicken
+1, 2.0, pasta
+1, 7.0, burger, uttapam, chicken, pasta
+1, 2.0, omelette
+1, 10.0, uttapam, omelette
+1, 2.0, chicken
+1, 5.0, uttapam, dosa
+1, 4.0, wine
+1, 6.0, pasta, dosa, uttapam, burger, wada
+1, 8.0, pasta, wada, chicken
+1, 4.0, rissotto, wine, dosa, pasta, chicken, wada, burger, uttapam
+1, 9.0, wada
+1, 2.0, dosa, omelette, uttapam, pasta, wada, rissotto
+1, 5.0, burger, uttapam, chicken, omelette, pasta
+1, 5.0, rissotto
+1, 6.0, wada, dosa, wine, uttapam, chicken, omelette, burger
+1, 2.0, wada, omelette, rissotto, dosa, chicken
+1, 9.0, wine, dosa, chicken, wada, omelette, pasta, burger, rissotto, uttapam
+1, 2.0, dosa
+1, 3.0, rissotto, chicken, wine, burger, pasta, wada, omelette, dosa
+1, 10.0, burger, chicken, uttapam, rissotto, pasta
+1, 4.0, chicken, dosa, pasta, rissotto, wada
+1, 3.0, wine, wada, rissotto, burger, chicken, omelette
+1, 10.0, chicken, burger, rissotto, omelette, wada, wine, uttapam, dosa
+2, 9.0, wine
+2, 9.0, dosa, pasta, omelette, wada, rissotto, uttapam, chicken
+2, 3.0, pasta, uttapam, burger, rissotto
+2, 6.0, uttapam
+2, 4.0, burger, pasta
+2, 10.0, wada
+2, 7.0, chicken, dosa, omelette
+2, 9.0, burger
+2, 2.0, wada, wine
+2, 8.0, wine, uttapam, omelette
+2, 7.0, uttapam, chicken, omelette, pasta, burger, wada
+2, 2.0, omelette, wine, rissotto
+2, 5.0, chicken, dosa, wada, wine, omelette
+2, 7.0, chicken, burger
+2, 5.0, dosa
+2, 3.0, rissotto, pasta, dosa, chicken
+2, 5.0, chicken, rissotto, dosa, burger, wada, uttapam
+3, 5.0, chicken
+3, 5.0, omelette, uttapam, rissotto, wada, pasta, chicken, dosa, burger, wine
+3, 8.0, rissotto
+3, 10.0, burger, chicken, omelette, wada, wine, pasta
+3, 7.0, uttapam
+3, 10.0, pasta, uttapam, burger, omelette, wada, dosa, wine, rissotto
+3, 5.0, wada
+3, 6.0, rissotto, chicken
+3, 2.0, burger
+3, 4.0, burger, wine, dosa, chicken, pasta, wada, omelette, rissotto
+3, 10.0, wine
+3, 8.0, wada, uttapam, chicken, dosa, burger, pasta
+3, 6.0, wada, pasta, chicken, dosa, rissotto
+3, 3.0, rissotto, wada, chicken, pasta, omelette
+3, 9.0, omelette, rissotto, burger, chicken, pasta, wine, dosa
+3, 9.0, pasta
+3, 10.0, wine, chicken, wada, burger
+3, 4.0, omelette
+3, 10.0, dosa, wine, omelette, wada, chicken
+3, 7.0, wine, rissotto, chicken, omelette, uttapam, pasta
+3, 6.0, omelette, rissotto, pasta
+4, 6.0, burger
+4, 7.0, rissotto, pasta, omelette, wada, dosa, chicken
+4, 3.0, chicken
+4, 10.0, omelette, wada, chicken, burger
+4, 7.0, pasta
+4, 10.0, omelette, uttapam
+4, 4.0, rissotto
+4, 5.0, uttapam, chicken, pasta, wada, omelette, dosa, rissotto, wine
+4, 3.0, dosa
+4, 8.0, omelette, rissotto, dosa, uttapam, pasta
+4, 8.0, chicken, burger, uttapam, omelette, wada, wine, rissotto, dosa
+4, 10.0, omelette
+4, 5.0, chicken, uttapam, pasta, omelette, rissotto, dosa, wada, wine, burger
+4, 4.0, omelette, burger, pasta, dosa, chicken, wine
+4, 7.0, dosa, burger, wada, uttapam
+4, 5.0, wine
+4, 10.0, wada, burger, chicken
+4, 3.0, omelette, uttapam, wine, pasta, chicken, wada, rissotto
+4, 4.0, wada, wine, chicken
+4, 2.0, uttapam
+4, 3.0, dosa, chicken, burger
+5, 3.0, burger
+5, 2.0, burger, pasta, wada, wine
+5, 6.0, wine
+5, 10.0, uttapam, omelette
+5, 8.0, omelette
+5, 4.0, omelette, dosa, uttapam, pasta, wine
+5, 8.0, pasta
+5, 3.0, uttapam, chicken, pasta, burger, omelette, dosa, wada
+5, 10.0, wada
+5, 9.0, burger, rissotto, wine, omelette, uttapam, pasta
+5, 9.0, wada, omelette, rissotto, uttapam, wine, burger, pasta, dosa, chicken
+5, 8.0, rissotto, pasta, wine
+5, 7.0, rissotto, pasta, dosa, wada, chicken
+5, 5.0, dosa
+5, 3.0, dosa, omelette, rissotto, wada
+5, 7.0, dosa, pasta, wine
+5, 8.0, chicken
+5, 2.0, uttapam, wine, burger, dosa, wada
+5, 4.0, uttapam
+5, 7.0, dosa, rissotto, wine, burger, pasta, chicken, uttapam
+5, 7.0, pasta, omelette, wine, dosa, burger, wada, chicken
+5, 3.0, wada, dosa, burger, omelette
+5, 4.0, wine, burger, wada, uttapam, pasta, rissotto, chicken
+6, 5.0, wada
+6, 2.0, rissotto, uttapam, wine
+6, 5.0, uttapam
+6, 6.0, pasta, rissotto, omelette, wada, dosa, uttapam, chicken, wine
+6, 3.0, rissotto
+6, 7.0, chicken, rissotto, wine, wada
+6, 9.0, omelette
+6, 4.0, omelette, chicken, burger, pasta, dosa, wine, uttapam
+6, 4.0, dosa
+6, 6.0, dosa, pasta, omelette
+6, 3.0, uttapam, wine, dosa, rissotto, wada, pasta, chicken
+6, 6.0, pasta
+6, 2.0, dosa, chicken, omelette, wine, rissotto, pasta
+6, 7.0, pasta, burger, rissotto
+6, 6.0, omelette, wada, rissotto, burger, uttapam, wine, pasta, dosa, chicken
+6, 2.0, pasta, chicken, wada, omelette, rissotto
+6, 10.0, wine, uttapam, dosa, wada
+6, 8.0, burger
+6, 6.0, omelette, rissotto, pasta, burger, wine, chicken, wada
+7, 8.0, omelette
+7, 9.0, omelette, wine, uttapam, rissotto, wada
+7, 3.0, rissotto
+7, 6.0, pasta, omelette, uttapam, rissotto
+7, 9.0, wada
+7, 7.0, dosa, rissotto, chicken, uttapam, pasta
+7, 8.0, dosa
+7, 8.0, uttapam, pasta, rissotto, chicken
+7, 2.0, pasta
+7, 3.0, pasta, rissotto, dosa
+7, 9.0, uttapam
+7, 5.0, chicken, wada, pasta, dosa, omelette, burger
+7, 4.0, wine, dosa, rissotto, burger, pasta, omelette, wada, uttapam, chicken
+8, 9.0, rissotto
+8, 6.0, rissotto, uttapam, wine, dosa, chicken
+8, 5.0, wada
+8, 6.0, wine, omelette, uttapam, wada
+8, 9.0, chicken
+8, 2.0, burger, omelette, wine
+8, 3.0, pasta
+8, 4.0, burger, uttapam, rissotto, dosa, chicken, pasta, wada
+8, 3.0, uttapam
+8, 2.0, wine, rissotto, dosa, wada, burger, pasta, uttapam, chicken, omelette
+8, 4.0, dosa
+8, 3.0, chicken, wada, omelette, burger, dosa
+8, 6.0, wine
+8, 6.0, dosa, pasta, wine, wada
+8, 4.0, wine, wada, uttapam, dosa, chicken
+8, 3.0, dosa, chicken, pasta
+8, 5.0, wada, chicken, burger, pasta, wine, uttapam, omelette, dosa
+8, 2.0, omelette
+8, 10.0, burger, pasta, chicken, dosa, wada
+8, 9.0, wine, dosa
+8, 8.0, burger
+8, 7.0, pasta, omelette
+8, 3.0, uttapam, burger, pasta, chicken, wine, wada, dosa
+8, 9.0, wine, chicken, uttapam, pasta, wada
+8, 8.0, wada, pasta, wine, burger
+9, 6.0, dosa
+9, 4.0, pasta, omelette
+9, 8.0, pasta
+9, 10.0, rissotto, dosa, pasta, chicken, omelette
+9, 9.0, uttapam
+9, 9.0, pasta, chicken, omelette, burger, rissotto
+9, 9.0, rissotto
+9, 6.0, uttapam, wine, pasta, wada, dosa, omelette, burger
+9, 3.0, wine
+9, 5.0, dosa, uttapam, omelette, burger, wine, pasta, chicken, wada, rissotto
+9, 6.0, uttapam, pasta
+9, 8.0, omelette
+9, 8.0, pasta, chicken, burger, wada, omelette
+9, 10.0, wada
+9, 9.0, burger, chicken, rissotto, wada, dosa, uttapam
+10, 3.0, omelette
+10, 2.0, uttapam, chicken, rissotto
+10, 4.0, uttapam
+10, 4.0, uttapam, pasta, chicken, burger, omelette, dosa
+10, 3.0, dosa
+10, 4.0, wada, rissotto
+10, 7.0, wine, burger, dosa
+10, 4.0, rissotto
+10, 9.0, wada, omelette, pasta
+10, 6.0, omelette, chicken, wine, rissotto, dosa, wada, burger
+
